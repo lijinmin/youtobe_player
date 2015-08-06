@@ -6,7 +6,7 @@ class PlayersController < ApplicationController
   # GET /players.json
   def index
     @players = Player.all
-    # Oauth_2.credentials
+    Oauth2.credentials
 
   end
 

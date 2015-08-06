@@ -6,7 +6,7 @@ require 'json'
 require 'launchy'
 require 'thin'
 require 'rest-client'
-class Oauth_2
+class Oauth2
   def self.credentials
     client = Signet::OAuth2::Client.new(
       :authorization_uri => 'https://accounts.google.com/o/oauth2/auth',

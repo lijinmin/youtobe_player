@@ -13,6 +13,11 @@ class OpenAuth < ActiveRecord::Base
     client = Oauth2.credentials
     auth_uri = (client.authorization_uri(options={})).to_s
   end
+  def self.save_oauth_code(code)
+    open_auth= OpenAuth.where(id: 1).first
+    open_auth.code = code
+    open_auth.save
+  end
   def self.get_access_token
     client = Oauth2.credentials
     open_auth= OpenAuth.where(id: 1).first

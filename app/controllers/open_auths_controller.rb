@@ -1,5 +1,5 @@
 class OpenAuthsController < ApplicationController
-  before_action :set_open_auth, only: [:show, :edit, :update, :destroy]
+  before_action :set_open_auth, only: [ :edit, :update, :destroy]
 
   # GET /open_auths
   # GET /open_auths.json

@@ -1,0 +1,69 @@
+<%= form_for(@open_auth) do |f| %>
+  <% if @open_auth.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@open_auth.errors.count, "error") %> prohibited this open_auth from being saved:</h2>
+
+      <ul>
+      <% @open_auth.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :authorization_uri %><br>
+    <%= f.text_field :authorization_uri %>
+  </div>
+  <div class="field">
+    <%= f.label :token_credential_uri %><br>
+    <%= f.text_field :token_credential_uri %>
+  </div>
+  <div class="field">
+    <%= f.label :redirect_uri %><br>
+    <%= f.text_field :redirect_uri %>
+  </div>
+  <div class="field">
+    <%= f.label :client_id %><br>
+    <%= f.text_field :client_id %>
+  </div>
+  <div class="field">
+    <%= f.label :client_secret %><br>
+    <%= f.text_field :client_secret %>
+  </div>
+  <div class="field">
+    <%= f.label :scope %><br>
+    <%= f.text_field :scope %>
+  </div>
+  <div class="field">
+    <%= f.label :code %><br>
+    <%= f.text_field :code %>
+  </div>
+  <div class="field">
+    <%= f.label :state %><br>
+    <%= f.text_field :state %>
+  </div>
+  <div class="field">
+    <%= f.label :scope %><br>
+    <%= f.text_field :scope %>
+  </div>
+  <div class="field">
+    <%= f.label :access_token %><br>
+    <%= f.text_field :access_token %>
+  </div>
+  <div class="field">
+    <%= f.label :token_type %><br>
+    <%= f.text_field :token_type %>
+  </div>
+  <div class="field">
+    <%= f.label :expires_in %><br>
+    <%= f.text_field :expires_in %>
+  </div>
+  <div class="field">
+    <%= f.label :update %><br>
+    <%= f.datetime_select :update %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

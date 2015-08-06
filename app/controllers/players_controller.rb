@@ -12,6 +12,7 @@ class PlayersController < ApplicationController
   # GET /players/1
   # GET /players/1.json
   def show
+    @token_hash = Oauth2.credentials(@code)
   end
 
   # GET /players/new

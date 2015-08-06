@@ -11,7 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150803080638) do
+ActiveRecord::Schema.define(version: 20150806095609) do
+
+  create_table "open_auths", force: :cascade do |t|
+    t.string   "authorization_uri",    limit: 255
+    t.string   "token_credential_uri", limit: 255
+    t.string   "redirect_uri",         limit: 255
+    t.string   "client_id",            limit: 255
+    t.string   "client_secret",        limit: 255
+    t.string   "scope",                limit: 255
+    t.string   "code",                 limit: 255
+    t.string   "state",                limit: 255
+    t.string   "access_token",         limit: 255
+    t.string   "token_type",           limit: 255
+    t.string   "expires_in",           limit: 255
+    t.datetime "update"
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
+  end
 
   create_table "players", force: :cascade do |t|
     t.string   "name",       limit: 255

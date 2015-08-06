@@ -7,7 +7,7 @@ require 'json'
 # require 'thin'
 require 'rest-client'
 class Oauth2
-  def self.credentials(code)
+  def self.credentials
     client = Signet::OAuth2::Client.new(
       :authorization_uri => 'https://accounts.google.com/o/oauth2/auth',
       :token_credential_uri => 'https://accounts.google.com/o/oauth2/token',
@@ -16,9 +16,6 @@ class Oauth2
       :client_secret => 'VhUtzfBcK5s27z9rtkaH12Mz',
       :scope => 'https://www.google.com/m8/feeds/'
       )
-     puts url = (client.authorization_uri(options={})).to_s
-     client.code=('code')
-     token_hash = client.fetch_access_token!   
-    return token_hash
+    return client
   end
 end

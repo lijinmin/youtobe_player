@@ -1,0 +1,2 @@
+module OpenAuthsHelper
+end

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :open_auths
   resources :players
   get 'oauth2callback' => 'players#index'
   # The priority is based upon order of creation: first created -> highest priority.

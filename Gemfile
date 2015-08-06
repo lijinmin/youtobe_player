@@ -28,6 +28,8 @@ gem 'unicorn'
 gem 'rest-client'
 gem 'actionpack-xml_parser'
 gem 'signet'
+gem 'launchy'
+gem 'thin'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

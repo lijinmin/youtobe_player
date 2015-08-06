@@ -1,6 +1,6 @@
 require 'googleauth'
 require 'signet'
-# require 'google/api_client'
+require 'google-api-client'
 # require 'google/api_client/client_secrets'
 require 'json'
 require 'launchy'

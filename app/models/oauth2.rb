@@ -3,8 +3,8 @@ require 'signet'
 # require 'google-api-client'
 # require 'google/api_client/client_secrets'
 require 'json'
-require 'launchy'
-require 'thin'
+# require 'launchy'
+# require 'thin'
 require 'rest-client'
 class Oauth2
   def self.credentials

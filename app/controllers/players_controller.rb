@@ -6,8 +6,7 @@ class PlayersController < ApplicationController
   # GET /players.json
   def index
     @players = Player.all
-    Oauth2.credentials
-
+    @token_hash = Oauth2.credentials(params[:code])
   end
 
   # GET /players/1
@@ -63,7 +62,6 @@ class PlayersController < ApplicationController
       format.json { head :no_content }
     end
   end
-
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_player

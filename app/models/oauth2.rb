@@ -7,7 +7,7 @@ require 'json'
 # require 'thin'
 require 'rest-client'
 class Oauth2
-  def self.credentials
+  def self.credentials(code)
     client = Signet::OAuth2::Client.new(
       :authorization_uri => 'https://accounts.google.com/o/oauth2/auth',
       :token_credential_uri => 'https://accounts.google.com/o/oauth2/token',
@@ -17,26 +17,8 @@ class Oauth2
       :scope => 'https://www.google.com/m8/feeds/'
       )
      puts url = (client.authorization_uri(options={})).to_s
-     # res = RestClient.get(url)
-      # server = Thin::Server.new('0.0.0.0', 8080) do
-      #   run lambda { |env|
-      #     # Exchange the auth code & quit
-      #     req = Rack::Request.new(env)
-      #     auth.code = req['code']
-      #     auth.fetch_access_token!
-      #     server.stop()
-      #     [200, {'Content-Type' => 'text/html'}, RESPONSE_HTML]
-      #   }
-      # end
+     client.code=('code')
+     token_hash = client.fetch_access_token!   
+    return token_hash
   end
-   def self.invoke_remote(url, playload)
-      r = RestClient::Request.execute(
-        {
-          method: :post,
-          url: url,
-          playload: payload,
-          headers: { content_type: 'application/xml' }
-        }
-      )
-    end
 end

@@ -50,8 +50,8 @@ class PlayersController < ApplicationController
     #   else
     #     format.html { render :edit }
     #     format.json { render json: @player.errors, status: :unprocessable_entity }
-      end
-    end
+    #   end
+    # end
   end
 
   # DELETE /players/1

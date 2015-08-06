@@ -14,6 +14,9 @@ class OpenAuth < ActiveRecord::Base
     auth_uri = (client.authorization_uri(options={})).to_s
   end
   def self.save_oauth_code(code)
+    if OpenAuth.where(id: 1).first == nil
+      OpenAuth.init_open_auth
+    end
     open_auth = OpenAuth.where(id: 1).first
     open_auth.code = code
     open_auth.save

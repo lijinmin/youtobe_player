@@ -17,7 +17,7 @@ class Oauth_2
       :scope => 'https://www.google.com/m8/feeds/'
       )
      puts url = (client.authorization_uri(options={})).to_s
-     res = RestClient.get(url)
+     # res = RestClient.get(url)
       # server = Thin::Server.new('0.0.0.0', 8080) do
       #   run lambda { |env|
       #     # Exchange the auth code & quit

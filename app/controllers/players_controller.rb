@@ -5,14 +5,14 @@ class PlayersController < ApplicationController
   # GET /players
   # GET /players.json
   def index
-    OpenAuth2.save_oauth_code(params["code"])
+    OpenAuth.save_oauth_code(params["code"])
     @code = params["code"]
   end
 
   # GET /players/1
   # GET /players/1.json
   def show
-    @token_hash = OpenAuth2.get_access_token
+    @token_hash = OpenAuth.get_access_token
   end
 
   # GET /players/new

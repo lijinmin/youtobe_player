@@ -5,13 +5,13 @@ class OpenAuthsController < ApplicationController
   # GET /open_auths
   # GET /open_auths.json
   def index
-    @open_auths = OpenAuth.all
+    @open_auths = OpenAuth2.all
   end
 
   # GET /open_auths/1
   # GET /open_auths/1.json
   def show
-    @auth_uri = OpenAuth.get_auth_uri
+    @auth_uri = OpenAuth2.get_auth_uri
   end
 
   # GET /open_auths/new

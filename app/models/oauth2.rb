@@ -21,4 +21,5 @@ class Oauth2 < ActiveRecord::Base
       open_auth.save
     end
     return token_hash
-  endend
+  end
+end

@@ -5,7 +5,7 @@ class OpenAuth2Controller < ApplicationController
   end
   def new
     if OpenAuth2.where(:id=>1).first == nil
-      @open_auth = OpenAuth2.create(
+      @open_auth = OpenAuth2.new(
         :authorization_uri => 'https://accounts.google.com/o/oauth2/auth',
         :token_credential_uri => 'https://accounts.google.com/o/oauth2/token',
         :redirect_uri => 'http://wxtest.aggso.com/oauth2callback',

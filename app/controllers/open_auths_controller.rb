@@ -40,17 +40,17 @@ class OpenAuthsController < ApplicationController
 
   # PATCH/PUT /open_auths/1
   # PATCH/PUT /open_auths/1.json
-  def update
-    respond_to do |format|
-      if @open_auth.update(open_auth_params)
-        format.html { redirect_to @open_auth, notice: 'Open auth was successfully updated.' }
-        format.json { render :show, status: :ok, location: @open_auth }
-      else
-        format.html { render :edit }
-        format.json { render json: @open_auth.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+  # def update
+  #   respond_to do |format|
+  #     if @open_auth.update(open_auth_params)
+  #       format.html { redirect_to @open_auth, notice: 'Open auth was successfully updated.' }
+  #       format.json { render :show, status: :ok, location: @open_auth }
+  #     else
+  #       format.html { render :edit }
+  #       format.json { render json: @open_auth.errors, status: :unprocessable_entity }
+  #     end
+  #   end
+  # end
 
   # DELETE /open_auths/1
   # DELETE /open_auths/1.json

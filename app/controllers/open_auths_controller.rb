@@ -16,7 +16,7 @@ class OpenAuthsController < ApplicationController
 
   # GET /open_auths/new
   def new
-    # @open_auth = OpenAuth.new
+    @open_auth = OpenAuth.new
     # if OpenAuth.where(:id=>1).first == nil
     #   open_auth = OpenAuth.new
     #   open_auth.authorization_uri = 'https://accounts.google.com/o/oauth2/auth'

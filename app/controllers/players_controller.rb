@@ -16,9 +16,9 @@ class PlayersController < ApplicationController
   end
 
   # GET /players/new
-  def new
-    @player = Player.new
-  end
+  # def new
+  #   @player = Player.new
+  # end
 
   # GET /players/1/edit
   def edit
@@ -42,17 +42,17 @@ class PlayersController < ApplicationController
 
   # PATCH/PUT /players/1
   # PATCH/PUT /players/1.json
-  def update
-    # respond_to do |format|
-    #   if @player.update(player_params)
-    #     format.html { redirect_to @player, notice: 'Player was successfully updated.' }
-    #     format.json { render :show, status: :ok, location: @player }
-    #   else
-    #     format.html { render :edit }
-    #     format.json { render json: @player.errors, status: :unprocessable_entity }
-    #   end
-    # end
-  end
+  # def update
+  #   # respond_to do |format|
+  #   #   if @player.update(player_params)
+  #   #     format.html { redirect_to @player, notice: 'Player was successfully updated.' }
+  #   #     format.json { render :show, status: :ok, location: @player }
+  #   #   else
+  #   #     format.html { render :edit }
+  #   #     format.json { render json: @player.errors, status: :unprocessable_entity }
+  #   #   end
+  #   # end
+  # end
 
   # DELETE /players/1
   # DELETE /players/1.json

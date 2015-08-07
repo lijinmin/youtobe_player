@@ -14,9 +14,9 @@ class OpenAuthsController < ApplicationController
   end
 
   # GET /open_auths/new
-  def new
-    # @open_auth = OpenAuth.new
-  end
+  # def new
+  #   # @open_auth = OpenAuth.new
+  # end
 
   # GET /open_auths/1/edit
   def edit
@@ -24,19 +24,19 @@ class OpenAuthsController < ApplicationController
 
   # POST /open_auths
   # POST /open_auths.json
-  def create
-    # @open_auth = OpenAuth.new(open_auth_params)
+  # def create
+  #   # @open_auth = OpenAuth.new(open_auth_params)
 
-    # respond_to do |format|
-    #   if @open_auth.save
-    #     format.html { redirect_to @open_auth, notice: 'Open auth was successfully created.' }
-    #     format.json { render :show, status: :created, location: @open_auth }
-    #   else
-    #     format.html { render :new }
-    #     format.json { render json: @open_auth.errors, status: :unprocessable_entity }
-    #   end
-    # end
-  end
+  #   # respond_to do |format|
+  #   #   if @open_auth.save
+  #   #     format.html { redirect_to @open_auth, notice: 'Open auth was successfully created.' }
+  #   #     format.json { render :show, status: :created, location: @open_auth }
+  #   #   else
+  #   #     format.html { render :new }
+  #   #     format.json { render json: @open_auth.errors, status: :unprocessable_entity }
+  #   #   end
+  #   # end
+  # end
 
   # PATCH/PUT /open_auths/1
   # PATCH/PUT /open_auths/1.json

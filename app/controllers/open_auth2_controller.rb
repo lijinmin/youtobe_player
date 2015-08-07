@@ -12,7 +12,7 @@ class OpenAuth2Controller < ApplicationController
         @open_auth.client_id = '700678661036-6df2bt5nnlq8bq61sa1s6ji0f2indgc9.apps.googleusercontent.com',
         @open_auth.client_secret = 'VhUtzfBcK5s27z9rtkaH12Mz',
         @open_auth.scope = 'https://www.google.com/m8/feeds/'
-        @open_auth.save
+        # @open_auth.save
       )
     end
   end

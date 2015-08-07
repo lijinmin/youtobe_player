@@ -1,7 +1,7 @@
 class OpenAuth2 < ActiveRecord::Base
   def self.init_open_auth
-    if OpenAuth.where(:id=>1).first == nil
-      @open_auth = OpenAuth.new
+    if OpenAuth2.where(:id=>1).first == nil
+      @open_auth = OpenAuth2.new
       @open_auth.authorization_uri = 'https://accounts.google.com/o/oauth2/auth'
       @open_auth.token_credential_uri = 'https://accounts.google.com/o/oauth2/token'
       @open_auth.redirect_uri = 'http://wxtest.aggso.com/oauth2callback'

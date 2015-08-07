@@ -16,9 +16,9 @@ class PlayersController < ApplicationController
   end
 
   # GET /players/new
-  # def new
-  #   @player = Player.new
-  # end
+  def new
+    @player = Player.new
+  end
 
   # GET /players/1/edit
   def edit

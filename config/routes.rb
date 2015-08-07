@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :oauth2s
   resources :open_auths
   resources :players
   get 'oauth2callback' => 'players#index'

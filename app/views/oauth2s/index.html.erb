@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Oauth2s</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Authorization uri</th>
+      <th>Token credential uri</th>
+      <th>Redirect uri</th>
+      <th>Client</th>
+      <th>Client secret</th>
+      <th>Scope</th>
+      <th>Code</th>
+      <th>State</th>
+      <th>Expires in</th>
+      <th>Update</th>
+      <th>Access token</th>
+      <th>Token type</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @oauth2s.each do |oauth2| %>
+      <tr>
+        <td><%= oauth2.authorization_uri %></td>
+        <td><%= oauth2.token_credential_uri %></td>
+        <td><%= oauth2.redirect_uri %></td>
+        <td><%= oauth2.client_id %></td>
+        <td><%= oauth2.client_secret %></td>
+        <td><%= oauth2.scope %></td>
+        <td><%= oauth2.code %></td>
+        <td><%= oauth2.state %></td>
+        <td><%= oauth2.expires_in %></td>
+        <td><%= oauth2.update %></td>
+        <td><%= oauth2.access_token %></td>
+        <td><%= oauth2.token_type %></td>
+        <td><%= link_to 'Show', oauth2 %></td>
+        <td><%= link_to 'Edit', edit_oauth2_path(oauth2) %></td>
+        <td><%= link_to 'Destroy', oauth2, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Oauth2', new_oauth2_path %>

@@ -1,0 +1,1 @@
+json.extract! @oauth2, :id, :authorization_uri, :token_credential_uri, :redirect_uri, :client_id, :client_secret, :scope, :code, :state, :expires_in, :update, :access_token, :token_type, :created_at, :updated_at

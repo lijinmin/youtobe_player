@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  authorization_uri: MyString
+  token_credential_uri: MyString
+  redirect_uri: MyString
+  client_id: MyString
+  client_secret: MyString
+  scope: MyString
+  code: MyString
+  state: MyString
+  expires_in: MyString
+  update: 2015-08-07 11:00:10
+  access_token: MyString
+  token_type: MyString
+
+two:
+  authorization_uri: MyString
+  token_credential_uri: MyString
+  redirect_uri: MyString
+  client_id: MyString
+  client_secret: MyString
+  scope: MyString
+  code: MyString
+  state: MyString
+  expires_in: MyString
+  update: 2015-08-07 11:00:10
+  access_token: MyString
+  token_type: MyString

@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Authorization uri:</strong>
+  <%= @oauth2.authorization_uri %>
+</p>
+
+<p>
+  <strong>Token credential uri:</strong>
+  <%= @oauth2.token_credential_uri %>
+</p>
+
+<p>
+  <strong>Redirect uri:</strong>
+  <%= @oauth2.redirect_uri %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @oauth2.client_id %>
+</p>
+
+<p>
+  <strong>Client secret:</strong>
+  <%= @oauth2.client_secret %>
+</p>
+
+<p>
+  <strong>Scope:</strong>
+  <%= @oauth2.scope %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @oauth2.code %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @oauth2.state %>
+</p>
+
+<p>
+  <strong>Expires in:</strong>
+  <%= @oauth2.expires_in %>
+</p>
+
+<p>
+  <strong>Update:</strong>
+  <%= @oauth2.update %>
+</p>
+
+<p>
+  <strong>Access token:</strong>
+  <%= @oauth2.access_token %>
+</p>
+
+<p>
+  <strong>Token type:</strong>
+  <%= @oauth2.token_type %>
+</p>
+
+<%= link_to 'Edit', edit_oauth2_path(@oauth2) %> |
+<%= link_to 'Back', oauth2s_path %>
